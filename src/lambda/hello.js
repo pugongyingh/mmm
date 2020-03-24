@@ -61,7 +61,16 @@ var  tmp;
   }
  var  mmm=mm.split(';')[0];
  var  pp=mm.split(';')[1];
- var  hh="smtp."+mmm.split('@')[1];
+ var  sss = mmm.split('@')[1];
+ var  hh;
+           if(sss == "sina.com.cn")
+          {
+             hh="smtp.sina.com";
+          }
+          else
+          {
+              hh="smtp."+ sss;
+          }
     const transport = nodemailer.createTransport({
     host: hh, // 主机
     secureConnection: true, // 使用 SSL
