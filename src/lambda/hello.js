@@ -18,7 +18,7 @@ var  tmp;
   var  ss = parseInt(body.send);
   var  tt = parseInt(body.tmp);
 
-     mm =process.env.mm.split(' ')[ss];
+     mm =process.env.mm.split(/\s+/)[ss];
 
  
    switch (tt) {
