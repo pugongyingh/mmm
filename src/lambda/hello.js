@@ -17,43 +17,9 @@ var  tmp;
  var  sub;
   var  ss = parseInt(body.send);
   var  tt = parseInt(body.tmp);
-   switch (ss) {
-    case 1:
-     mm =process.env.m1;
-      break;
-    case 2:
-     mm =process.env.m2;
-      break;
-    case 3:
-     mm =process.env.m3;
-      break;
-    case 4:
-     mm =process.env.m4;
-      break;
-    case 5:
-     mm =process.env.m5;
-      break;
-    case 6:
-     mm =process.env.m6;
-      break;
-    case 7:
-     mm =process.env.m7;
-      break;
-    case 8:
-     mm =process.env.m8;
-      break;
-    case 9:
-     mm =process.env.m9;
-      break;
-    case 10:
-     mm =process.env.m10;
-      break;
-    case 11:
-     mm =process.env.m10;
-      break;
-    default:
-     mm =process.env.m1;
-  }
+
+     mm =process.env.mm.split('!')[ss];
+
  
    switch (tt) {
     case 1:
