@@ -12,13 +12,13 @@ export async function handler(event, context, callback){
     var min = "10000";
    // const max = 99999;
    // const num = Math.floor(Math.random() * (max - min + 1)) + min;
-var  mm;
+var  mm = process.env.mm;
 var  tmp;
  var  sub;
   var  ss = parseInt(body.send);
   var  tt = parseInt(body.tmp);
 
-     mm =process.env.mm.split('!')[ss];
+     mm =mm.split('!')[ss];
 
  
    switch (tt) {
