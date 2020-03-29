@@ -8,7 +8,7 @@ const nodemailer = require('nodemailer');
 const mailUtils = require("../mail");
 export async function handler(event, context, callback){
  // const { user, pass} = process.env
- var body = JSON.parse(event.body);
+ const  body = JSON.parse(event.body);
     var min = "10000";
    // const max = 99999;
    // const num = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -17,12 +17,12 @@ var  tmp;
  var  sub;
   var  ss = parseInt(body.send);
   var  tt = parseInt(body.tmp);
-  var  str = body.name;
-              if(str.includes("先生")||str.includes("小姐")||str.includes("女士")||str.includes("经理")||str.includes("老师"))
-              {
-              }else {
-body.name = str + "经理";
-    };
+  //var  str = body.name;
+ //             if(str.includes("先生")||str.includes("小姐")||str.includes("女士")||str.includes("经理")||str.includes("老师"))
+  //            {
+  //            }else {
+//body.name = str + "经理";
+//    };
 
      mm =mm.split('!')[ss];
 
