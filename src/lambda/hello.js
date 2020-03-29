@@ -8,7 +8,7 @@ const nodemailer = require('nodemailer');
 const mailUtils = require("../mail");
 export async function handler(event, context, callback){
  // const { user, pass} = process.env
- const body = JSON.parse(event.body);
+ var body = JSON.parse(event.body);
     var min = "10000";
    // const max = 99999;
    // const num = Math.floor(Math.random() * (max - min + 1)) + min;
