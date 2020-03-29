@@ -21,7 +21,7 @@ var  tmp;
               if(str.includes("先生")||str.includes("小姐")||str.includes("女士")||str.includes("经理")||str.includes("老师"))
               {
               }else {
-body.name=body.name+“经理”；
+body.name = str + "经理";
     };
 
      mm =mm.split('!')[ss];
