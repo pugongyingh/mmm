@@ -70,7 +70,7 @@ const mailUtils = {
     const details = {
       name: content.name
     };
-    return `您好`;
+    return `求职`;
   },
   getMailSub4: content => {
     const details = {
