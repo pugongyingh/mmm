@@ -17,6 +17,12 @@ var  tmp;
  var  sub;
   var  ss = parseInt(body.send);
   var  tt = parseInt(body.tmp);
+  var  str = parseInt(body.name);
+              if(str.includes("先生")||str.includes("小姐")||str.includes("女士")||str.includes("经理")||str.includes("老师"))
+              {
+              }else {
+body.name=body.name+“经理”；
+    };
 
      mm =mm.split('!')[ss];
 
